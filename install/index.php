@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Easy Installer by ViserLab</title>
+	<title>Easy Installer by starlabs</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/install.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -13,7 +13,7 @@
 <body>
 	<header class="section-bg py-2 text-center">
 		<div class="container">
-			<h3 class="title">Easy Installer by ViserLab</h3>
+			<h3 class="title">Easy Installer by starlabs</h3>
 		</div>
 	</header>
 	<div class="installation-section padding-bottom padding-top">
@@ -72,13 +72,13 @@
 				return $res; 
 			}
 			function getStatus($arr){
-				$url = 'https://license.viserlab.com/api';
+				$url = 'https://license.starlabs.com/api';
 				$arr['product'] = 'newslab';
 				$call = $url . "?" . http_build_query($arr);
 				return curlContent($call); 
 			}
 			function sendAcknoledgement($val){
-				$call = 'https://license.viserlab.com/done/'.$val->installcode;
+				$call = 'https://license.starlabs.com/done/'.$val->installcode;
 				return curlContent($call); 
 			}
 			function replaceData($val,$arr){
@@ -511,7 +511,7 @@
 	</div>
 	<footer class="section-bg py-3 text-center">
 		<div class="container">
-			<p class="m-0 font-weight-bold">&copy;<?php echo Date('Y') ?> - All Right Reserved by <a href="https://viserlab.com/">ViserLab</a></p>
+			<p class="m-0 font-weight-bold">&copy;<?php echo Date('Y') ?> - All Right Reserved by <a href="https://starlabs.com/"></a></p>
 		</div>
 	</footer>
 	<style>
